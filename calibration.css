@@ -1,0 +1,66 @@
+/* Layout calibrated against the official desktop homepage at 1440px. */
+.header-width{width:min(1240px,calc(100% - 60px));margin-inline:auto}
+.site-header{height:97px}
+.topbar{height:30px;background:#050505;color:#fff}
+.topbar>.header-width{height:100%;display:flex;justify-content:flex-end;align-items:center;gap:37px;font-size:12px}
+.topbar a:hover{color:#ff675f}
+.topbar .chevron{width:5px;height:5px;margin-left:3px}
+.header-inner{height:67px;gap:78px}
+.brand img{width:158px}
+.main-nav{justify-content:space-between}
+.nav-item{font-size:16px;padding:0 8px}
+.mega-menu{top:97px}
+.hero{height:437px;margin-top:97px}
+.hero-wash{background:linear-gradient(90deg,rgba(226,234,242,.2),transparent 65%)}
+.hero-content{transform:translateY(-30px);padding-bottom:0}
+.hero-kicker,.hero-subtitle,.outline-button,.hero-pagination{display:none}
+.hero h1{font-size:36px;line-height:1.55;letter-spacing:0;color:#191b20;font-weight:700}
+.waybill{max-width:960px;grid-template-columns:316px 1fr;gap:8px;min-height:112px;margin-top:-62px;margin-bottom:-50px}
+.waybill-search{height:112px;padding:25px 14px;border-radius:14px;box-shadow:none}
+.waybill-search>label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.search-box{height:62px;border-radius:13px;padding:0 90px 0 12px}
+.search-box img{width:18px;height:18px}
+.search-box input{font-size:12px}
+.search-bottom{display:contents}
+.search-bottom>span{position:absolute;bottom:5px;left:16px;font-size:11px}
+.search-submit{position:absolute;right:24px;top:40px;height:32px;padding:0 19px;border-radius:20px;background:linear-gradient(145deg,#fe7968,#fc3737);color:#fff;font-size:12px}
+.search-submit span{display:none}
+.clear-input{position:absolute;right:104px;font-size:17px}
+.quick-links{min-height:112px;padding:9px 12px;border-radius:14px;box-shadow:0 7px 17px rgba(25,35,65,.05)}
+.quick-links a{gap:1px;font-size:14px}
+.quick-links img{width:57px;height:57px}
+.quick-links a+a:before{display:none}
+.quick-links em{top:0;left:50%;font-size:8px}
+.services>.container,.solutions .container,.network .container,.news .container,.footer .container{max-width:960px}
+.services{padding:99px 0 70px;min-height:720px;background-image:none;background-color:#f2f3f7}
+.section-title{font-size:27px;display:flex;align-items:center;justify-content:center;gap:12px}
+.section-title:before,.section-title:after{content:"";width:18px;height:1px;background:#fc3737}
+.service-tabs-wrap{margin-top:8px}
+.service-tabs{border-bottom:1px solid #e8e9ef}
+.service-tab{min-width:0;height:100px;font-size:14px;padding:5px 10px 16px}
+.service-tab img{width:45px;height:45px;margin-bottom:4px}
+.service-tab.active img{transform:scale(1.5);transform-origin:top center}
+.service-tab.active span{opacity:0}
+.tab-arrow{top:36px;width:33px;height:33px;font-size:24px}
+.tab-arrow.left{left:-56px}.tab-arrow.right{right:-56px}
+.service-detail{margin-top:32px;min-height:365px}
+.service-heading h3{font-size:24px}
+.service-heading p{font-size:12px;max-width:450px;line-height:1.5;margin-top:8px}
+.service-card{width:710px;min-height:160px}
+.service-visual{width:546px;height:350px;max-height:none;top:-26px;right:-47px;bottom:auto;object-fit:contain;object-position:center;filter:none;mix-blend-mode:normal;mask-image:none}
+.service-visual.is-photo{width:52%;height:275px;top:12px;right:0;object-fit:cover;object-position:right center;mix-blend-mode:multiply;mask-image:radial-gradient(ellipse at 75% 62%,#000 35%,transparent 76%)}
+.service-product-heading{color:#23252b;font-size:15px}
+.solutions .section-title:before,.solutions .section-title:after,.news .section-title:before,.news .section-title:after{background:#fff}
+@media(max-width:880px){
+  .header-width{width:min(100% - 32px,640px)}
+  .site-header{height:64px}.topbar{display:none}.header-inner{height:64px;gap:12px}.brand img{width:145px}
+  .mega-menu{top:auto}.hero{height:460px;margin-top:64px}.hero-content{transform:none;padding-bottom:32px}
+  .hero h1{font-size:30px;line-height:1.45}.hero-wash{background:linear-gradient(90deg,rgba(226,234,242,.74),rgba(226,234,242,.16))}
+  .waybill{width:100%;max-width:none;display:block;margin-top:0;margin-bottom:0}
+  .waybill-search{height:85px;padding:12px 16px;border-radius:0}
+  .search-box{height:60px}.search-submit{top:26px;right:26px}.search-bottom>span{bottom:0}
+  .quick-links{min-height:95px;border-radius:0;padding:11px 6px}.quick-links img{width:48px;height:48px}.quick-links a{font-size:11px}
+  .services{padding:55px 0 60px;min-height:0}.section-title{font-size:25px}
+  .service-tabs-wrap{margin-top:20px}.service-tab{min-width:120px;height:103px;font-size:13px}.service-tab img{height:50px;width:50px}.service-tab.active span{opacity:1}
+  .service-detail{min-height:0}.service-card{width:100%;min-height:125px}.service-visual,.service-visual.is-photo{width:80%;height:155px;position:relative;top:auto;right:auto;bottom:auto;margin:-15px 0 0 auto;object-fit:contain;mask-image:none}
+}
